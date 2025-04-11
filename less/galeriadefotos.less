@@ -127,29 +127,26 @@
         .gallery-controls-next {
             position: relative;
             color: @light-color-nosotros;
-            padding-left: 30px; // espacio para el ícono
-        
+
             &::before {
                 border: solid @light-color-nosotros;
                 border-width: 0 5px 5px 0;
                 content: '';
                 display: inline-block;
                 height: 5px;
-                width: 5px;
                 padding: 10px;
                 position: absolute;
-                left: 0;
-                top: 25%;
+                right: -30px;
+                top: 45%;
                 transform: rotate(-45deg) translateY(-50%);
-                transition: left 0.15s ease-in-out;
+                transition: right 0.15s ease-in-out;
+                width: 5px;
             }
-        
+
             &:hover::before {
-                left: -10px;
+                right: -40px;
             }
         }
-        
-        
     }
 
     .gallery-nav {
