@@ -27,7 +27,7 @@ const obtenerEntradas = () => {
 
 export default defineConfig({
     appType: 'mpa',
-    base: process.env.DEPLOY_BASE_URL,
+    base: '/prueba/',
     build: {
         rollupOptions: {
             input: obtenerEntradas(),
@@ -38,3 +38,4 @@ export default defineConfig({
         htmlPurge({})
     ]
 });
+
